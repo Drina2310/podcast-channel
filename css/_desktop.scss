@@ -1,0 +1,187 @@
+//Vista Desktop
+@media screen and (min-width: 992px){
+
+    header{
+        
+        .logo{
+            margin-left: 5em;
+            margin-top: 1em;
+
+        }
+          
+        
+        nav{
+            label{
+                #icon-hamburguesa{
+                    display: none;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 0;
+                margin-right: 3em;
+                width: 80%;
+                height: 8vh;
+                background: #ffffff;
+                
+                li{
+                   display: inline-block;
+
+                   
+                   
+                   a{
+                    font-size: 1rem;
+                    color: #060A24;
+                    line-height: 28px;
+                   
+                    &:hover {
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                    }
+                    &:active{
+                        text-decoration: line-through;
+                    }
+                   }
+                }
+               
+            }
+        }
+    }
+
+    .container{
+        .principal{
+            margin-left: 10em;
+
+            h1{
+                font-size: 4rem;
+            }
+            p{
+               
+                font-size: 1rem;
+            }
+
+            .btn{
+                width: 226px;
+                height: 56px;
+            }
+        }
+
+        #pod{
+            height: 750px;
+            width: 100%;
+            h1{
+                font-size: 3rem;
+                margin: 2.5em 0 1em 3em;
+            }
+
+            .podcast{
+                grid-area: podcast;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 6em 2em 6em;
+
+                #iframe{
+                    width: 584px;
+                    height: 232px; 
+                }
+
+            }
+        }
+        
+        .phone{
+            top: 62em;
+            left: 8em ;
+            
+            .cel{
+                width: 320px;
+            }
+        }
+
+        .we{
+            top: 74em;
+            left: 32em;
+            width: 420px;
+            height: 270px;
+
+            h1{
+                margin-bottom: 0.5em;
+                font-size: 3em;
+            }
+            
+        }
+
+        .guests{
+            top: 100em;
+
+            h1{
+                font-size: 3rem;
+                margin-left: 3em;
+            }
+
+            .container-gallery{
+                grid-area: container-gallery;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                
+                .gallery{
+                    width: 100%;
+                    height: 50vh;
+                }
+            }
+        }
+
+        .themes{
+            top: 141em;
+
+            h1{
+                margin-left: 3em;
+                font-size: 3rem;
+            }
+            
+            .icons{           
+                grid-area: icons;     
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-left: 2em;
+                
+                .themes-img{
+                    padding:  2em;
+                }
+            }
+        }
+
+        #news{
+           position: absolute;
+           top: 161em;
+
+           .distorted-news{
+               height: 400px;
+           }
+            
+           .btn{
+               display: block;
+               margin: 0 auto;
+           }
+        }
+
+        footer{
+            top: 182em;  
+                   
+
+            .info-footer{
+                display: flex;
+                margin-left: 2em;  
+            }
+
+            .red{
+                margin: 3em 0 0 28em;
+            }
+
+            #hello{
+                margin-top: 2em;
+            }
+        }
+        
+    }
+}
